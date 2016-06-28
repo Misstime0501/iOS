@@ -1,0 +1,303 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB46D8621D1BAAF80090CDAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB46D8611D1BAAF80090CDAD /* AppDelegate.swift */; };
+		DB46D8641D1BAAF80090CDAD /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DB46D8631D1BAAF80090CDAD /* GameScene.sks */; };
+		DB46D8661D1BAAF80090CDAD /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB46D8651D1BAAF80090CDAD /* GameScene.swift */; };
+		DB46D8681D1BAAF90090CDAD /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB46D8671D1BAAF90090CDAD /* GameViewController.swift */; };
+		DB46D86B1D1BAAF90090CDAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB46D8691D1BAAF90090CDAD /* Main.storyboard */; };
+		DB46D86D1D1BAAF90090CDAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB46D86C1D1BAAF90090CDAD /* Assets.xcassets */; };
+		DB46D8701D1BAAF90090CDAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB46D86E1D1BAAF90090CDAD /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DB46D85E1D1BAAF80090CDAD /* HelloiOSGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloiOSGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB46D8611D1BAAF80090CDAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB46D8631D1BAAF80090CDAD /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		DB46D8651D1BAAF80090CDAD /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		DB46D8671D1BAAF90090CDAD /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		DB46D86A1D1BAAF90090CDAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB46D86C1D1BAAF90090CDAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB46D86F1D1BAAF90090CDAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB46D8711D1BAAF90090CDAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB46D85B1D1BAAF80090CDAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB46D8551D1BAAF80090CDAD = {
+			isa = PBXGroup;
+			children = (
+				DB46D8601D1BAAF80090CDAD /* HelloiOSGame */,
+				DB46D85F1D1BAAF80090CDAD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB46D85F1D1BAAF80090CDAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB46D85E1D1BAAF80090CDAD /* HelloiOSGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB46D8601D1BAAF80090CDAD /* HelloiOSGame */ = {
+			isa = PBXGroup;
+			children = (
+				DB46D8611D1BAAF80090CDAD /* AppDelegate.swift */,
+				DB46D8631D1BAAF80090CDAD /* GameScene.sks */,
+				DB46D8651D1BAAF80090CDAD /* GameScene.swift */,
+				DB46D8671D1BAAF90090CDAD /* GameViewController.swift */,
+				DB46D8691D1BAAF90090CDAD /* Main.storyboard */,
+				DB46D86C1D1BAAF90090CDAD /* Assets.xcassets */,
+				DB46D86E1D1BAAF90090CDAD /* LaunchScreen.storyboard */,
+				DB46D8711D1BAAF90090CDAD /* Info.plist */,
+			);
+			path = HelloiOSGame;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB46D85D1D1BAAF80090CDAD /* HelloiOSGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB46D8741D1BAAF90090CDAD /* Build configuration list for PBXNativeTarget "HelloiOSGame" */;
+			buildPhases = (
+				DB46D85A1D1BAAF80090CDAD /* Sources */,
+				DB46D85B1D1BAAF80090CDAD /* Frameworks */,
+				DB46D85C1D1BAAF80090CDAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloiOSGame;
+			productName = HelloiOSGame;
+			productReference = DB46D85E1D1BAAF80090CDAD /* HelloiOSGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB46D8561D1BAAF80090CDAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = LiChen;
+				TargetAttributes = {
+					DB46D85D1D1BAAF80090CDAD = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = DB46D8591D1BAAF80090CDAD /* Build configuration list for PBXProject "HelloiOSGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB46D8551D1BAAF80090CDAD;
+			productRefGroup = DB46D85F1D1BAAF80090CDAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB46D85D1D1BAAF80090CDAD /* HelloiOSGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB46D85C1D1BAAF80090CDAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB46D8641D1BAAF80090CDAD /* GameScene.sks in Resources */,
+				DB46D8701D1BAAF90090CDAD /* LaunchScreen.storyboard in Resources */,
+				DB46D86D1D1BAAF90090CDAD /* Assets.xcassets in Resources */,
+				DB46D86B1D1BAAF90090CDAD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB46D85A1D1BAAF80090CDAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB46D8661D1BAAF80090CDAD /* GameScene.swift in Sources */,
+				DB46D8681D1BAAF90090CDAD /* GameViewController.swift in Sources */,
+				DB46D8621D1BAAF80090CDAD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DB46D8691D1BAAF90090CDAD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB46D86A1D1BAAF90090CDAD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB46D86E1D1BAAF90090CDAD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB46D86F1D1BAAF90090CDAD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB46D8721D1BAAF90090CDAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB46D8731D1BAAF90090CDAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB46D8751D1BAAF90090CDAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HelloiOSGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = huruiwangyan.HelloiOSGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DB46D8761D1BAAF90090CDAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HelloiOSGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = huruiwangyan.HelloiOSGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB46D8591D1BAAF80090CDAD /* Build configuration list for PBXProject "HelloiOSGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB46D8721D1BAAF90090CDAD /* Debug */,
+				DB46D8731D1BAAF90090CDAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB46D8741D1BAAF90090CDAD /* Build configuration list for PBXNativeTarget "HelloiOSGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB46D8751D1BAAF90090CDAD /* Debug */,
+				DB46D8761D1BAAF90090CDAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB46D8561D1BAAF80090CDAD /* Project object */;
+}
