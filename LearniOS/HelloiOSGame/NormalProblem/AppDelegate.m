@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  EncoderUseNSCoding
+//  NormalProblem
 //
-//  Created by LiChen on 6/28/16.
+//  Created by LiChen on 6/29/16.
 //  Copyright © 2016 LiChen. All rights reserved.
 //
 

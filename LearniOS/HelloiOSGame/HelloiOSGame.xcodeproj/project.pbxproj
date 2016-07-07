@@ -14,6 +14,18 @@
 		DB46D86B1D1BAAF90090CDAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB46D8691D1BAAF90090CDAD /* Main.storyboard */; };
 		DB46D86D1D1BAAF90090CDAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB46D86C1D1BAAF90090CDAD /* Assets.xcassets */; };
 		DB46D8701D1BAAF90090CDAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB46D86E1D1BAAF90090CDAD /* LaunchScreen.storyboard */; };
+		DB5016B11D236AAE00F28921 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5016B01D236AAE00F28921 /* main.m */; };
+		DB5016B41D236AAE00F28921 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5016B31D236AAE00F28921 /* AppDelegate.m */; };
+		DB5016B71D236AAE00F28921 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5016B61D236AAE00F28921 /* ViewController.m */; };
+		DB5016BA1D236AAE00F28921 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5016B81D236AAE00F28921 /* Main.storyboard */; };
+		DB5016BC1D236AAE00F28921 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB5016BB1D236AAE00F28921 /* Assets.xcassets */; };
+		DB5016BF1D236AAE00F28921 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5016BD1D236AAE00F28921 /* LaunchScreen.storyboard */; };
+		DB5016C61D236BB000F28921 /* BusinessCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5016C51D236BB000F28921 /* BusinessCardView.m */; };
+		DB5016C91D2373F800F28921 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5016C81D2373F800F28921 /* Model.m */; };
+		DB5016CD1D23787D00F28921 /* BusinessCardAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5016CC1D23787D00F28921 /* BusinessCardAdapter.m */; };
+		DB5016D11D2379D900F28921 /* NewCardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5016D01D2379D900F28921 /* NewCardModel.m */; };
+		DB5016D41D237A0B00F28921 /* ModelAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5016D31D237A0B00F28921 /* ModelAdapter.m */; };
+		DB5016D71D237BA100F28921 /* NewCardModelApater.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5016D61D237BA100F28921 /* NewCardModelApater.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +38,40 @@
 		DB46D86C1D1BAAF90090CDAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB46D86F1D1BAAF90090CDAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB46D8711D1BAAF90090CDAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB5016AD1D236AAD00F28921 /* NormalProblem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NormalProblem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB5016B01D236AAE00F28921 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DB5016B21D236AAE00F28921 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DB5016B31D236AAE00F28921 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DB5016B51D236AAE00F28921 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DB5016B61D236AAE00F28921 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DB5016B91D236AAE00F28921 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB5016BB1D236AAE00F28921 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB5016BE1D236AAE00F28921 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB5016C01D236AAE00F28921 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB5016C41D236BB000F28921 /* BusinessCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessCardView.h; sourceTree = "<group>"; };
+		DB5016C51D236BB000F28921 /* BusinessCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessCardView.m; sourceTree = "<group>"; };
+		DB5016C71D2373F800F28921 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		DB5016C81D2373F800F28921 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		DB5016CA1D23777700F28921 /* BusinessCardAdapterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessCardAdapterProtocol.h; sourceTree = "<group>"; };
+		DB5016CB1D23787D00F28921 /* BusinessCardAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessCardAdapter.h; sourceTree = "<group>"; };
+		DB5016CC1D23787D00F28921 /* BusinessCardAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessCardAdapter.m; sourceTree = "<group>"; };
+		DB5016CF1D2379D900F28921 /* NewCardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewCardModel.h; sourceTree = "<group>"; };
+		DB5016D01D2379D900F28921 /* NewCardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewCardModel.m; sourceTree = "<group>"; };
+		DB5016D21D237A0B00F28921 /* ModelAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelAdapter.h; sourceTree = "<group>"; };
+		DB5016D31D237A0B00F28921 /* ModelAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelAdapter.m; sourceTree = "<group>"; };
+		DB5016D51D237BA100F28921 /* NewCardModelApater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewCardModelApater.h; sourceTree = "<group>"; };
+		DB5016D61D237BA100F28921 /* NewCardModelApater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewCardModelApater.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DB46D85B1D1BAAF80090CDAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB5016AA1D236AAD00F28921 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,6 +86,7 @@
 			children = (
 				DB46D8601D1BAAF80090CDAD /* HelloiOSGame */,
 				DB46D85F1D1BAAF80090CDAD /* Products */,
+				DB5016AE1D236AAE00F28921 /* NormalProblem */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				DB46D85E1D1BAAF80090CDAD /* HelloiOSGame.app */,
+				DB5016AD1D236AAD00F28921 /* NormalProblem.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +112,51 @@
 				DB46D8711D1BAAF90090CDAD /* Info.plist */,
 			);
 			path = HelloiOSGame;
+			sourceTree = "<group>";
+		};
+		DB5016AE1D236AAE00F28921 /* NormalProblem */ = {
+			isa = PBXGroup;
+			children = (
+				DB5016D51D237BA100F28921 /* NewCardModelApater.h */,
+				DB5016D61D237BA100F28921 /* NewCardModelApater.m */,
+				DB5016D21D237A0B00F28921 /* ModelAdapter.h */,
+				DB5016D31D237A0B00F28921 /* ModelAdapter.m */,
+				DB5016CE1D23799D00F28921 /* BusinessCard */,
+				DB5016B21D236AAE00F28921 /* AppDelegate.h */,
+				DB5016B31D236AAE00F28921 /* AppDelegate.m */,
+				DB5016B51D236AAE00F28921 /* ViewController.h */,
+				DB5016B61D236AAE00F28921 /* ViewController.m */,
+				DB5016C71D2373F800F28921 /* Model.h */,
+				DB5016C81D2373F800F28921 /* Model.m */,
+				DB5016CF1D2379D900F28921 /* NewCardModel.h */,
+				DB5016D01D2379D900F28921 /* NewCardModel.m */,
+				DB5016B81D236AAE00F28921 /* Main.storyboard */,
+				DB5016BB1D236AAE00F28921 /* Assets.xcassets */,
+				DB5016BD1D236AAE00F28921 /* LaunchScreen.storyboard */,
+				DB5016C01D236AAE00F28921 /* Info.plist */,
+				DB5016AF1D236AAE00F28921 /* Supporting Files */,
+			);
+			path = NormalProblem;
+			sourceTree = "<group>";
+		};
+		DB5016AF1D236AAE00F28921 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB5016B01D236AAE00F28921 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DB5016CE1D23799D00F28921 /* BusinessCard */ = {
+			isa = PBXGroup;
+			children = (
+				DB5016C41D236BB000F28921 /* BusinessCardView.h */,
+				DB5016C51D236BB000F28921 /* BusinessCardView.m */,
+				DB5016CA1D23777700F28921 /* BusinessCardAdapterProtocol.h */,
+				DB5016CB1D23787D00F28921 /* BusinessCardAdapter.h */,
+				DB5016CC1D23787D00F28921 /* BusinessCardAdapter.m */,
+			);
+			name = BusinessCard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +179,23 @@
 			productReference = DB46D85E1D1BAAF80090CDAD /* HelloiOSGame.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DB5016AC1D236AAD00F28921 /* NormalProblem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB5016C31D236AAE00F28921 /* Build configuration list for PBXNativeTarget "NormalProblem" */;
+			buildPhases = (
+				DB5016A91D236AAD00F28921 /* Sources */,
+				DB5016AA1D236AAD00F28921 /* Frameworks */,
+				DB5016AB1D236AAD00F28921 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NormalProblem;
+			productName = NormalProblem;
+			productReference = DB5016AD1D236AAD00F28921 /* NormalProblem.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -101,6 +207,9 @@
 				ORGANIZATIONNAME = LiChen;
 				TargetAttributes = {
 					DB46D85D1D1BAAF80090CDAD = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					DB5016AC1D236AAD00F28921 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -119,6 +228,7 @@
 			projectRoot = "";
 			targets = (
 				DB46D85D1D1BAAF80090CDAD /* HelloiOSGame */,
+				DB5016AC1D236AAD00F28921 /* NormalProblem */,
 			);
 		};
 /* End PBXProject section */
@@ -135,6 +245,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DB5016AB1D236AAD00F28921 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB5016BF1D236AAE00F28921 /* LaunchScreen.storyboard in Resources */,
+				DB5016BC1D236AAE00F28921 /* Assets.xcassets in Resources */,
+				DB5016BA1D236AAE00F28921 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -145,6 +265,22 @@
 				DB46D8661D1BAAF80090CDAD /* GameScene.swift in Sources */,
 				DB46D8681D1BAAF90090CDAD /* GameViewController.swift in Sources */,
 				DB46D8621D1BAAF80090CDAD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB5016A91D236AAD00F28921 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB5016B71D236AAE00F28921 /* ViewController.m in Sources */,
+				DB5016CD1D23787D00F28921 /* BusinessCardAdapter.m in Sources */,
+				DB5016D11D2379D900F28921 /* NewCardModel.m in Sources */,
+				DB5016D41D237A0B00F28921 /* ModelAdapter.m in Sources */,
+				DB5016D71D237BA100F28921 /* NewCardModelApater.m in Sources */,
+				DB5016B41D236AAE00F28921 /* AppDelegate.m in Sources */,
+				DB5016C61D236BB000F28921 /* BusinessCardView.m in Sources */,
+				DB5016B11D236AAE00F28921 /* main.m in Sources */,
+				DB5016C91D2373F800F28921 /* Model.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +299,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				DB46D86F1D1BAAF90090CDAD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DB5016B81D236AAE00F28921 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB5016B91D236AAE00F28921 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB5016BD1D236AAE00F28921 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB5016BE1D236AAE00F28921 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -277,6 +429,29 @@
 			};
 			name = Release;
 		};
+		DB5016C11D236AAE00F28921 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = NormalProblem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = huruiwangyan.NormalProblem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DB5016C21D236AAE00F28921 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NormalProblem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = huruiwangyan.NormalProblem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -296,6 +471,16 @@
 				DB46D8761D1BAAF90090CDAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB5016C31D236AAE00F28921 /* Build configuration list for PBXNativeTarget "NormalProblem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB5016C11D236AAE00F28921 /* Debug */,
+				DB5016C21D236AAE00F28921 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

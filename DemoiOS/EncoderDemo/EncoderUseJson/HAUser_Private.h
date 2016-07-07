@@ -8,12 +8,16 @@
 
 #import "HAUser.h"
 #import "encoderUseJson.h"
+#import <objc/runtime.h>
 
 static HAUser *kHAUser = nil;
 
 @interface HAUser ()
 {
-    
+    NSString *_userID;
+    NSString *_userName;
+    NSString *_phoneNumber;
+    NSString *_emailAddress;
 }
 
 /**

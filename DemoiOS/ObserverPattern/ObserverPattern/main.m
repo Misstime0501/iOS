@@ -1,9 +1,9 @@
 //
 //  main.m
-//  EncoderUseNSCoding
+//  ObserverPattern
 //
-//  Created by LiChen on 6/28/16.
-//  Copyright © 2016 LiChen. All rights reserved.
+//  Created by LiChen on 16/6/30.
+//  Copyright © 2016年 LiChen. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

@@ -16,4 +16,7 @@
 
 + (id)decoder:(NSData *)data;
 
+
++ (id)getObjectFromDic:(NSDictionary *)dic object:(id)object;
+
 @end

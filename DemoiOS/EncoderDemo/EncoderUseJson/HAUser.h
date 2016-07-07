@@ -40,12 +40,14 @@
  */
 - (instancetype)init;
 
+- (instancetype)initWithUser:(HAUser *)user;
+
 
 - (NSData *)encoder;
 
-- (NSDictionary *)decoder;
+- (id)decoder:(NSData *)data object:(id)object;
 
-
++ (id)getObject:(NSData *)data;
 
 @end
 

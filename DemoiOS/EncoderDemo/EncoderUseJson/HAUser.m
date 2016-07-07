@@ -37,6 +37,30 @@
     return self;
 }
 
+- (instancetype)initWithUser:(HAUser *)user
+{
+    self = [super init];
+    if (self)
+    {
+        if (user != nil)
+        {
+            _userID = user.userID;
+            _userName = user.userName;
+            _phoneNumber = user.phoneNumber;
+            _emailAddress = user.emailAddress;
+        }
+        else
+        {
+            _userID = [[NSString alloc] init];
+            _userName = [[NSString alloc] init];
+            _phoneNumber = [[NSString alloc] init];
+            _emailAddress = [[NSString alloc] init];
+        }
+    }
+    return self;
+}
+
+
 - (void)setUserID:(NSString *)userID
 {
     _userID = userID;
@@ -90,6 +114,133 @@
 {
     return [encoderUseJson encoder:self];
 }
+
+
+- (id)decoder:(NSData *)data object:(id)object
+{
+    NSDictionary *dic = [encoderUseJson decoder:data];
+    return [HAUser getObjectFromDic:dic object:object];
+}
+
+
+
++ (id)getObject:(NSData *)data
+{
+    NSDictionary *dic = [encoderUseJson decoder:data];
+    id copy = [[[self class] alloc] init];
+    NSDictionary *dictionary = [[NSDictionary alloc] init];
+    dictionary = dic;
+    
+    Class class = [self class];
+    while (class != [NSObject class])
+    {
+        NSString *className = NSStringFromClass(class);
+        if ([dictionary objectForKey:className])
+        {
+            dictionary = [dictionary objectForKey:className];
+        }
+        u_int count;
+        objc_property_t *properties = class_copyPropertyList(class, &count);
+        for (int i = 0; i < count; i++)
+        {
+            objc_property_t property = properties[i];
+            const char *propertyName = property_getName(property);
+            
+            NSString *key = [NSString stringWithUTF8String:propertyName];
+            id value = [dictionary valueForKey:key];
+            if (value)
+            {
+                if ([key isEqualToString:@"userID"])
+                {
+                    [copy setUserID:value];
+                }
+                else if ([key isEqualToString:@"userName"])
+                {
+                    [copy setUserName:value];
+                }
+                else if ([key isEqualToString:@"phoneNumber"])
+                {
+                    [copy setPhoneNumber:value];
+                }
+                else if ([key isEqualToString:@"emailAddress"])
+                {
+                    [copy setEmailAddress:value];
+                }
+                else
+                {
+                    [copy setValue:value forKey:key];
+                }
+            }
+        }
+        free(properties);
+        class = [class superclass];
+    }
+    return copy;
+}
+
+
++ (id)getObjectFromDic:(NSDictionary *)dic object:(id)object
+{
+    id copy = [[[object class] alloc] init];
+    NSDictionary *dictionary = [[NSDictionary alloc] init];
+    dictionary = dic;
+    
+    Class class = [object class];
+    while (class != [NSObject class])
+    {
+        NSString *className = NSStringFromClass(class);
+        if ([dictionary objectForKey:className])
+        {
+            dictionary = [dictionary objectForKey:className];
+        }
+        u_int count;
+        objc_property_t *properties = class_copyPropertyList(class, &count);
+        for (int i = 0; i < count; i++)
+        {
+            objc_property_t property = properties[i];
+            const char *propertyName = property_getName(property);
+            
+            NSString *key = [NSString stringWithUTF8String:propertyName];
+            id value = [dictionary valueForKey:key];
+            if (value)
+            {
+                if ([key isEqualToString:@"userID"])
+                {
+                    [copy setUserID:value];
+                }
+                else if ([key isEqualToString:@"userName"])
+                {
+                    [copy setUserName:value];
+                }
+                else if ([key isEqualToString:@"phoneNumber"])
+                {
+                    [copy setPhoneNumber:value];
+                }
+                else if ([key isEqualToString:@"emailAddress"])
+                {
+                    [copy setEmailAddress:value];
+                }
+                else
+                {
+                    [copy setValue:value forKey:key];
+                }
+            }
+        }
+        free(properties);
+        class = [class superclass];
+    }
+    return copy;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

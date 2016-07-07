@@ -37,6 +37,29 @@
     return self;
 }
 
+- (instancetype)initWithUser:(HAUser *)user
+{
+    self = [super init];
+    if (self)
+    {
+        if (user != nil)
+        {
+            _userID = user.userID;
+            _userName = user.userName;
+            _phoneNumber = user.phoneNumber;
+            _emailAddress = user.emailAddress;
+        }
+        else
+        {
+            _userID = [[NSString alloc] init];
+            _userName = [[NSString alloc] init];
+            _phoneNumber = [[NSString alloc] init];
+            _emailAddress = [[NSString alloc] init];
+        }
+    }
+    return self;
+}
+
 - (void)setUserID:(NSString *)userID
 {
     _userID = userID;
@@ -208,5 +231,33 @@
     return despStr;  
 }
 
+
+- (NSData *)serializeArchive
+{
+    return [self serializeArchive:self];
+}
+
+- (NSData *)serializeArchive:(id)object
+{
+    NSMutableData *data = [NSMutableData data];
+    NSKeyedArchiver *archiver = [[NSKeyedArchiver alloc] initForWritingWithMutableData:data];
+    NSLog(@"加密 key = %@ ", NSStringFromClass([object class]));
+    [archiver encodeObject:object forKey:NSStringFromClass([object class])];
+    [archiver finishEncoding];
+    return data;
+}
+
+- (id)serializeUnarchive:(NSData *)data
+{
+    return [self serializeUnarchive:self data:data];
+}
+
+- (id)serializeUnarchive:(id)object data:(NSData *)data
+{
+    NSKeyedUnarchiver *unarchiver = [[NSKeyedUnarchiver alloc] initForReadingWithData:data];
+    object = [unarchiver decodeObjectForKey:NSStringFromClass([object class])];
+    [unarchiver finishDecoding];
+    return object;
+}
 
 @end

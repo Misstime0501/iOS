@@ -302,6 +302,7 @@
 				DB2893A81D222705006F1D72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

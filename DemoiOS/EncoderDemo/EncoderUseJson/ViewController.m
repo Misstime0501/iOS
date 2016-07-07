@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Dog.h"
 #import "HAUser.h"
 #import "HAUser_Private.h"
 #import "Person.h"
@@ -21,20 +22,44 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
-    HAUser *user = [self user];
-    NSLog(@"%@", user);
-    NSLog(@"%@", [user encoder]);
-    
-    
+
+    // 创建 Person 对象
     Person *person = [self person];
-    NSLog(@"%@", person);
-    NSLog(@"%@", [person encoder]);
+    
+    // 序列化
+    NSData *personData = [person encoder];
+    NSLog(@"序列化之后的二进制 Data = %@", personData);
+    
+    // 返序列化
+    Person *newPerson = [Person getObject:personData];
+    NSLog(@"以二进制 Data 反序列化得 Person = %@", newPerson);
+    
+    Dog *dog = [self dog];
+    
+    NSData *dogData = [dog encoder];
+    NSLog(@"Dog 序列化后 = %@", dogData);
+    
+    Dog *newDog = [Dog getObject:dogData];
+    NSLog(@"以 Data 反序列化的 newDog = %@", newDog);
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (Person *)person
+{
+    Person *person = [[Person alloc] init];
+    person.userID = @"200";
+    person.userName = @"aoteman";
+    person.phoneNumber = @"13800138000";
+    person.emailAddress = @"aoteman@gmail.com";
+    person.school = @"su zhou you er yuan";
+    return person;
+}
+
+- (Dog *)dog
+{
+    Dog *dog = [[Dog alloc] initWithUser:[self person]];
+    dog.age = @"15";
+    dog.nickName = @"tai di";
+    return dog;
 }
 
 
@@ -42,33 +67,21 @@
 {
     HAUser *user = [[HAUser alloc] init];
     user.userID = @"100";
-    user.userName = @"lichen";
+    user.userName = @"aotewoman";
     user.phoneNumber = @"13123456789";
-    user.emailAddress = @"lichen@gmail.com";
+    user.emailAddress = @"aotewoman@gmail.com";
     
     return user;
 }
 
-- (Person *)person
-{
-    Person *person = [[Person alloc] init];
-    person.userID = @"200";
-    person.userName = @"liuchao";
-    person.phoneNumber = @"13800138000";
-    person.emailAddress = @"liuchao@gmail.com";
-    person.school = @"su zhou you er yuan";
-    return person;
-}
-
 - (NSData *)encoderUseJson:(NSObject *)object
 {
-    NSLog(@"%@", [encoderUseJson encoder:object]);
     return [encoderUseJson encoder:object];
 }
 
-- (void)decoderUseJson:(NSData *)data
+- (id)decoderUseJson:(NSData *)data
 {
-    NSLog(@"%@", [encoderUseJson decoder:data]);
+    return [encoderUseJson decoder:data];
 }
 
 

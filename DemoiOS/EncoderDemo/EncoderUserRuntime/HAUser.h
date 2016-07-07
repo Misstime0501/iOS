@@ -51,9 +51,15 @@ __objToStoreData__ = [unarchiver decodeObjectForKey:__key__];  \
  */
 - (instancetype)init;
 
+- (instancetype)initWithUser:(HAUser *)user;
 
 
 
+- (NSData *)serializeArchive;
+- (NSData *)serializeArchive:(id)object;
+
+- (id)serializeUnarchive:(NSData *)data;
+- (id)serializeUnarchive:(id)object data:(NSData *)data;
 
 @end
 

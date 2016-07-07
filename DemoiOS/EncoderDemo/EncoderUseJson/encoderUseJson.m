@@ -44,7 +44,6 @@
             }
         }
     }
-    NSLog(@"dic = %@", returnDictionary);
     return returnDictionary;
 }
 
@@ -74,6 +73,11 @@
     free(properties);
     return props;
 }
+
+
+
+
+
 
 + (NSData *)encoder:(id)object
 {

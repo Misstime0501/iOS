@@ -2,10 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:HelloSwift/../HotKey.md">
+      location = "group:HotKey.png">
    </FileRef>
    <FileRef
-      location = "group:/Users/lichen/Desktop/LearniOS/HotKey.png">
+      location = "group:HelloSwift/../HotKey.md">
    </FileRef>
    <FileRef
       location = "group:HelloSwift/../Property.md">
