@@ -41,6 +41,9 @@
     
     Dog *newDog = [Dog getObject:dogData];
     NSLog(@"以 Data 反序列化的 newDog = %@", newDog);
+    
+    HAUser *user = newDog;
+    NSLog(@"user = %@",user);
 }
 
 - (Person *)person

@@ -9,18 +9,8 @@
 #import "SubscriptionServiceCenter.h"
 
 static NSMutableDictionary *_subscriptionDictionary = nil;
-static SubscriptionServiceCenter *_subscriptionServiceCenter = nil;
-@implementation SubscriptionServiceCenter
 
-// 单例
-+ (void)sharedSubscriptionServiceCenter
-{
-    if (_subscriptionServiceCenter == nil)
-    {
-        _subscriptionServiceCenter = [[SubscriptionServiceCenter alloc] init];
-        _subscriptionDictionary = [NSMutableDictionary dictionary];
-    }
-}
+@implementation SubscriptionServiceCenter
 
 // 第一次调用实现，之后再也不会调用
 + (void)initialize
@@ -35,19 +25,19 @@ static SubscriptionServiceCenter *_subscriptionServiceCenter = nil;
 + (void)createSubscriptionNumber:(NSString *)subscriptionNumber
 {
     NSParameterAssert(subscriptionNumber);
-    NSHashTable *hasTable = [self existSubscriptionNumber:subscriptionNumber];
-    if (hasTable == nil)
-    {
-        hasTable = [NSHashTable weakObjectsHashTable];
-        [_subscriptionDictionary setObject:hasTable forKey:subscriptionNumber];
+    NSHashTable *hashTable = [self existSubscriptionNumber:subscriptionNumber];
+    if (hashTable == nil) {
+        
+        hashTable = [NSHashTable weakObjectsHashTable];
+        [_subscriptionDictionary setObject:hashTable forKey:subscriptionNumber];
     }
 }
 
 + (void)removeSubscriptionNumber:(NSString *)subscriptionNumber
 {
     NSParameterAssert(subscriptionNumber);
-    NSHashTable *hasTable = [self existSubscriptionNumber:subscriptionNumber];
-    if (hasTable)
+    NSHashTable *hashTable = [self existSubscriptionNumber:subscriptionNumber];
+    if (hashTable)
     {
         [_subscriptionDictionary removeObjectForKey:subscriptionNumber];
     }
@@ -58,8 +48,8 @@ static SubscriptionServiceCenter *_subscriptionServiceCenter = nil;
     NSParameterAssert(customer);
     NSParameterAssert(subscriptionNumber);
     
-    NSHashTable *hasTable = [self existSubscriptionNumber:subscriptionNumber];
-    [hasTable addObject:customer];
+    NSHashTable *hashTable = [self existSubscriptionNumber:subscriptionNumber];
+    [hashTable addObject:customer];
 }
 
 
@@ -67,21 +57,21 @@ static SubscriptionServiceCenter *_subscriptionServiceCenter = nil;
 {
     NSParameterAssert(subscriptionNumber);
     
-    NSHashTable *hasTable = [self existSubscriptionNumber:subscriptionNumber];
-    [hasTable removeObject:customer];
+    NSHashTable *hashTable = [self existSubscriptionNumber:subscriptionNumber];
+    [hashTable removeObject:customer];
 }
 
 + (void)sendMessage:(id)message toSubscriptionNumber:(NSString *)subscriptionNumber
 {
     NSParameterAssert(subscriptionNumber);
     
-    NSHashTable *hasTable = [self existSubscriptionNumber:subscriptionNumber];
-    if (hasTable)
+    NSHashTable *hashTable = [self existSubscriptionNumber:subscriptionNumber];
+    if (hashTable)
     {
         // 迭代器
-        NSEnumerator *enumerator = [hasTable objectEnumerator];
+        NSEnumerator *enumerator = [hashTable objectEnumerator];
         id <SubscriptionServiceCenterProtocol> object = nil;
-        while ([enumerator nextObject])
+        while (object = [enumerator nextObject])
         {
             // 检查一个对象是否实现了某种方法
             if ([object respondsToSelector:@selector(subscriptionMessage:subscriptionNumber:)])

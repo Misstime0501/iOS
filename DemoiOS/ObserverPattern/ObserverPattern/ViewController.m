@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "SubscriptionServiceCenterProtocol.h"
 #import "SubscriptionServiceCenter.h"
 
 static NSString *SCIENCE = @"SCIENCE";

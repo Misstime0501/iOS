@@ -2,6 +2,18 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:GamePlay/GamePlay.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:DrawDemo/DrawDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NSCopyingDemo/NSCopyingDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ProtoypeDemo/ProtoypeDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:StoreValue/StoreValue.xcodeproj">
    </FileRef>
    <FileRef
