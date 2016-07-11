@@ -2,6 +2,18 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:StoreValue/StoreValue.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SingletonPattern/SingletonPattern.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Macro/Macro.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Stategy_Pattern/Stategy_Pattern.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ThreadDemo/../ObserverPattern/ObserverPattern.xcodeproj">
    </FileRef>
    <FileRef
