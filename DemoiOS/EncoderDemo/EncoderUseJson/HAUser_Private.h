@@ -7,17 +7,25 @@
 //
 
 #import "HAUser.h"
-#import "encoderUseJson.h"
 #import <objc/runtime.h>
+
 
 static HAUser *kHAUser = nil;
 
+
+#define HASERIALIZE_ARCHIVE(__objToBeArchived__, __key__, __data__)    \
+NSKeyedArchiver *archiver = [[NSKeyedArchiver alloc] initForWritingWithMutableData:__data__];   \
+[archiver encodeObject:__objToBeArchived__ forKey:__key__];    \
+[archiver finishEncoding];
+
+#define HASERIALIZE_UNARCHIVE(__objToStoreData__, __key__, __data__)   \
+NSKeyedUnarchiver *unarchiver = [[NSKeyedUnarchiver alloc] initForReadingWithData:__data__];  \
+__objToStoreData__ = [unarchiver decodeObjectForKey:__key__];  \
+[unarchiver finishDecoding]
+
 @interface HAUser ()
 {
-    NSString *_userID;
-    NSString *_userName;
-    NSString *_phoneNumber;
-    NSString *_emailAddress;
+    
 }
 
 /**
@@ -87,5 +95,33 @@ static HAUser *kHAUser = nil;
  *  重置 UserPropertiesObject 中的值
  */
 - (void)resetHAUser;
+
+
+//- (instancetype)initWithDictionary:(NSDictionary *)otherDictionary;
+//
+//- (void)deserializate:(NSDictionary *)dictionary;
+
+
+- (NSDictionary *)dictionary;
+- (NSData *)encoder;
+- (NSDictionary *)decoder:(NSData *)data;
+- (id)object:(NSDictionary *)dictionary;
+
+
+
+- (NSString *)imageToString:(UIImage *)image;
+
+- (UIImage *)stringToImage:(NSString *)string;
+
+
+//- (NSDictionary *)getDictionaryFromObject:(id)classInstance;
+//
+//
+//- (id)getObjectFromDic:(NSDictionary *)dic object:(id)object;
+//
+//
+//
+//- (id)getObjectFromDic:(NSDictionary *)dic;
+
 
 @end

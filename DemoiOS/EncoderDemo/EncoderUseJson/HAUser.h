@@ -7,8 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-
+#import <UIKit/UIKit.h>
 
 /**
  *  可信 ID 对象类
@@ -18,20 +17,25 @@
 /**
  *  用户的 UserID 信息
  */
-@property (nonatomic, retain, readonly) NSString *userID;
+@property (nonatomic, retain) NSString *userID;
 /**
  *  用户注册后得以用户名
  */
-@property (nonatomic, retain, readonly) NSString *userName;
+@property (nonatomic, retain) NSString *userName;
 /**
  *  用户的手机号码信息
  */
-@property (nonatomic, retain, readonly) NSString *phoneNumber;
+@property (nonatomic, retain) NSString *phoneNumber;
 
 /**
  *  用户的邮箱信息
  */
-@property (nonatomic, retain, readonly) NSString *emailAddress;
+@property (nonatomic, retain) NSString *emailAddress;
+
+/**
+ *  用户的头像
+ */
+@property (nonatomic, retain) UIImage *headPortrait;
 
 /**
  *  初始化对象
@@ -39,15 +43,6 @@
  *  @return 返回初始化对象
  */
 - (instancetype)init;
-
-- (instancetype)initWithUser:(HAUser *)user;
-
-
-- (NSData *)encoder;
-
-- (id)decoder:(NSData *)data object:(id)object;
-
-+ (id)getObject:(NSData *)data;
 
 @end
 

@@ -25,6 +25,7 @@
 		DB28940E1D22675F006F1D72 /* HAUser.m in Sources */ = {isa = PBXBuildFile; fileRef = DB28940B1D22675F006F1D72 /* HAUser.m */; };
 		DB28940F1D22675F006F1D72 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = DB28940D1D22675F006F1D72 /* Person.m */; };
 		DB2894121D226781006F1D72 /* encoderUseRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2894111D226781006F1D72 /* encoderUseRuntime.m */; };
+		DB756AD01D3F25EB00710BCD /* headpng.png in Resources */ = {isa = PBXBuildFile; fileRef = DB756ACF1D3F25EB00710BCD /* headpng.png */; };
 		DBAFE0DD1D2E273D0007F956 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = DBAFE0DC1D2E273D0007F956 /* Dog.m */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		DB28940D1D22675F006F1D72 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		DB2894101D226781006F1D72 /* encoderUseRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encoderUseRuntime.h; sourceTree = "<group>"; };
 		DB2894111D226781006F1D72 /* encoderUseRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = encoderUseRuntime.m; sourceTree = "<group>"; };
+		DB756ACF1D3F25EB00710BCD /* headpng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = headpng.png; sourceTree = "<group>"; };
 		DBAFE0DB1D2E273D0007F956 /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
 		DBAFE0DC1D2E273D0007F956 /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +98,7 @@
 		DB2893AE1D2263A8006F1D72 /* EncoderUseJson */ = {
 			isa = PBXGroup;
 			children = (
+				DB756ACE1D3F25DE00710BCD /* Resource */,
 				DB2893E01D2263E2006F1D72 /* Object */,
 				DB2893DF1D2263D3006F1D72 /* Encoder */,
 				DB2893B21D2263A8006F1D72 /* AppDelegate.h */,
@@ -187,6 +190,14 @@
 				DB28940D1D22675F006F1D72 /* Person.m */,
 			);
 			name = Object;
+			sourceTree = "<group>";
+		};
+		DB756ACE1D3F25DE00710BCD /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				DB756ACF1D3F25EB00710BCD /* headpng.png */,
+			);
+			name = Resource;
 			sourceTree = "<group>";
 		};
 		DB8FBB951D20CD490088B3C4 = {
@@ -308,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB2893BF1D2263A8006F1D72 /* LaunchScreen.storyboard in Resources */,
+				DB756AD01D3F25EB00710BCD /* headpng.png in Resources */,
 				DB2893BC1D2263A8006F1D72 /* Assets.xcassets in Resources */,
 				DB2893BA1D2263A8006F1D72 /* Main.storyboard in Resources */,
 			);
