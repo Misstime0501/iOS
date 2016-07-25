@@ -43,10 +43,6 @@
     
 }
 
-
-
-
-
 /**
  *  IDFA    广告标识符
  *
@@ -119,9 +115,6 @@
 }
 
 
-
-
-
 //- (NSString *)getOpenUDID
 //{
 //    unsigned char result[16];
@@ -136,4 +129,5 @@
 //                          (long)(arc4random() % 4294967295)];
 //    return openUDID;
 //}
+
 @end

@@ -3,6 +3,16 @@
    version = "1.0">
    <Group
       location = "container:"
+      name = "&#x4ee3;&#x7406;&#x6a21;&#x5f0f;">
+      <FileRef
+         location = "group:Delegate/Delegate.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:ProxyPattern/ProxyPattern.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
       name = "&#x6865;&#x63a5;&#x8bbe;&#x8ba1;&#x6a21;&#x5f0f;">
       <FileRef
          location = "group:GameEmulator/GameEmulator.xcodeproj">
@@ -51,6 +61,9 @@
       </FileRef>
       <FileRef
          location = "group:UniquelyIdentifies/UniquelyIdentifies.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:CommunicationDemo/CommunicationDemo.xcodeproj">
       </FileRef>
    </Group>
    <Group
